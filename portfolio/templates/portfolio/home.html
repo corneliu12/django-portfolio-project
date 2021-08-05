@@ -1,4 +1,5 @@
 <!doctype html>
+{% load static %}
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -13,6 +14,8 @@
   <body>
     <div class="container">
     <h1>Home Page Portfolio App</h1>
+    <a href="{% static 'portfolio/file.pdf' %}">Resume</a>
+    <img src="{% static 'portfolio/claudiu_belu.jpg' %}" alt="Poza Here">
 
       {% for project in projects %}
         <h2>{{ project.title }}</h2>

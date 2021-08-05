@@ -14,6 +14,12 @@
     <div class="container">
     <h1>All Blogs</h1>
 
+      {% for blog in blogs %}
+      <h2>{{ blog.title}}</h2>
+      <h5>{{ blog.date }}</h5>
+      <p>{{ blog.description }}</p>
+
+      {% endfor %}
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
